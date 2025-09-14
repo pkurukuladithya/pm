@@ -8,7 +8,7 @@ function AboutPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 p-4">
       <div className="backdrop-blur-2xl bg-black/30 p-10 rounded-3xl shadow-2xl max-w-3xl w-full border border-violet-400/20">
         <h1 className="text-4xl font-bold text-white mb-8 flex items-center gap-3">
-          <span className="text-violet-400">PraWeena</span> Kurukuladithya
+          <span className="text-violet-400">Praveena</span> Kurukuladithya
         </h1>
 
         <div className="space-y-6 text-gray-300">
