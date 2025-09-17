@@ -37,11 +37,6 @@
 
 html, body, #root {
   min-height: 100vh;
-  background: linear-gradient(135deg, 
-    #fda4af 0%,    /* deeper rose */
-    #fecdd3 50%,   /* medium rose */
-    #ffe4e6 100%   /* lighter rose */
-  );
 }
 
 /* Ensure smooth color transitions */
@@ -55,7 +50,7 @@ html, body, #root {
 }
 
 /* make body darker mobile-first */
-html, body, #root { height: 100%; background-color: #0b0222; }
+html, body, #root { height: 100%; }
 
 /* Theming for different routes */
 .theme-date {
@@ -69,3 +64,15 @@ html, body, #root { height: 100%; background-color: #0b0222; }
 .theme-about {
   @apply bg-gradient-to-br from-blue-700 via-indigo-800 to-gray-900;
 }
+
+/* Prevent gradient tiling and ensure full-viewport coverage for themed backgrounds */
+.theme-date,
+.theme-verify,
+.theme-about {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Avoid accidental horizontal scroll on all pages */
+html, body { overflow-x: hidden; }
