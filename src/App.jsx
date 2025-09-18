@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import DateInputPage from "./DateInputPage";
 import ExtraVerifyPage from "./ExtraVerifyPage";
 import SecretMessagePage from "./SecretMessagePage";
 import AboutPage from "./AboutPage";
+
 
 /* small wrapper so we can use useLocation at top level and control body theme */
 function AppRoutes() {
@@ -76,6 +78,8 @@ function App() {
       <Router>
         <AppRoutes />
       </Router>
+
+      <Analytics />
     </>
   );
 }
